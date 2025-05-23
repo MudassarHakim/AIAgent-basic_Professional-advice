@@ -68,7 +68,7 @@ Please provide this information so I can offer specific strategies for your care
         st.session_state.messages.append({"role": "assistant", "content": response.text})
 
 # User information collection form (alternative approach)
-with st.expander("Provide Your Information (Optional)"):
+with st.expander("Provide Your Information"):
     with st.form("user_info_form"):
         role = st.selectbox(
             "Your current role",
