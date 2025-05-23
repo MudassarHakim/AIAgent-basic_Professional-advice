@@ -3,7 +3,7 @@ import google.generativeai as genai
 from datetime import datetime
 
 # Configure Gemini (replace with your API key)
-genai.configure(api_key="AIzaSyCiggltThVkzNdeiBB2iw-xmM1A2bFZlcM")
+# genai.configure(api_key="CUSTOM-KEY")
 model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 
 # Initialize session state
@@ -68,7 +68,7 @@ Please provide this information so I can offer specific strategies for your care
         st.session_state.messages.append({"role": "assistant", "content": response.text})
 
 # User information collection form (alternative approach)
-with st.expander("Provide Your Information"):
+with st.expander("Provide Your Information here and then proceed further on chat"):
     with st.form("user_info_form"):
         role = st.selectbox(
             "Your current role",
