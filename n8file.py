@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Configure Gemini (replace with your API key)
 genai.configure(api_key="AIzaSyCiggltThVkzNdeiBB2iw-xmM1A2bFZlcM")
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 
 # Initialize session state
 if "messages" not in st.session_state:
